@@ -1,4 +1,4 @@
-let A = 11;
+let A = Math.floor(Math.random() * 20);
 if (A % 2 === 0){
     console.log("A soni juft son");
 }
