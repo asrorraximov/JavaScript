@@ -1,5 +1,5 @@
-let unli = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
-let satr = "Salom Dunyo"
+let unli = ["a", "e", "i", "o'", "u", "o", "A", "E", "I", "O'", "U", "O'"];
+let satr = "Salom Dunyo'"
 let unliSum = 0;
 const strArr = satr.split('')
 console.log("ixtiyoriy so'z: " + satr)
