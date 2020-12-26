@@ -1,0 +1,22 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.row{
+    margin-top: 30vh;
+}
+label{
+    font-size: 12px !important;
+}
+input{
+    width: 90%;
+}
+input:focus{
+    outline: none;
+}
+hr{
+    height: 2px;
+}
+button:focus{
+    outline: none;
+}
