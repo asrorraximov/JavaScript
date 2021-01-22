@@ -1,0 +1,15 @@
+table{
+    border-collapse: unset;
+}
+input{
+    font-size: 30px !important;
+    width: 100%;
+    text-align: end;
+}
+input::placeholder{
+    color: rgb(146, 145, 145);
+}
+td{
+    padding: 0px !important;
+    vertical-align: middle !important;
+}
