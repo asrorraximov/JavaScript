@@ -8,7 +8,7 @@ $(document).ready(function(){
             let completed = titleKey.completed;
             let li = $('<li class="border p-2 d-flex align-items-center mb-2">' +
                             '<div><input class="form-check-input mx-2 check" type="checkbox" id="check-' + checkId + '"></div>' +
-                                '<label for="check-' + checkId + '" class="m-0 w-100">' + titleKey.title + ' ' + completed + '</label>' +
+                            '<label for="check-' + checkId + '" class="m-0 w-100">' + titleKey.title + ' ' + completed + '</label>' +
                         '</li>');
             list.append(li);
 
