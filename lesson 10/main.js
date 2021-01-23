@@ -2,15 +2,25 @@ $(document).ready(function(){
 
     function malumot(responseArray){
         let son = parseInt($("#malumotlar-soni").html())+1;
-        var list = $("#todo-list");
+        let checkId = 0;
+        let list = $("#todo-list");
         responseArray.forEach(function(titleKey){
-            var li = $('<li class="border p-2 d-flex align-items-center mb-2">' +
-                            '<div><input class="form-check-input mx-2" type="checkbox" id="check"></div>' +
-                            '<p class="m-0">' +
-                                '<label for="check">' + titleKey.title + '</label>' +
-                            '</p>' +
+            let completed = titleKey.completed;
+            let li = $('<li class="border p-2 d-flex align-items-center mb-2">' +
+                            '<div><input class="form-check-input mx-2 check" type="checkbox" id="check-' + checkId + '"></div>' +
+                                '<label for="check-' + checkId + '" class="m-0 w-100">' + titleKey.title + ' ' + completed + '</label>' +
                         '</li>');
             list.append(li);
+
+            if(completed === true){
+                $(`#check-${checkId}`).attr("checked", "checked");
+            }
+            else{
+                $(`#check-${checkId}`).removeAttr("checked");
+            }  
+            
+            checkId++;
+
             $("#malumotlar-soni").html(son++);
         })
     }
